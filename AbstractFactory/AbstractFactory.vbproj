@@ -96,8 +96,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Insurance\Accidental Death And dismemberment\" />
     <Folder Include="Models\" />
+    <Folder Include="Plans\Accidental Death And dismemberment\" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -132,12 +132,12 @@
   <ItemGroup>
     <Compile Include="Employee\Employee.vb" />
     <Compile Include="Employee\IEmployee.vb" />
-    <Compile Include="Insurance\BaseInsurance.vb" />
-    <Compile Include="Insurance\LifeInsurance\LifeInsuranceFlat.vb" />
+    <Compile Include="Plans\BasePlan.vb" />
+    <Compile Include="Plans\LifeInsurance\LifeInsuranceFlat.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Insurance\LifeInsurance\LifeInsuranceMultiple.vb" />
+    <Compile Include="Plans\LifeInsurance\LifeInsuranceMultiple.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
