@@ -1,4 +1,6 @@
 ﻿Public Class Employee
+    Implements IEmployee
+
     Private _name As String
     Private _title As String
     Private _age As Integer
@@ -10,7 +12,7 @@
         salary = _salary
     End Sub
 
-    Public Property name As String
+    Public Property name As String Implements IEmployee.name
         Get
             Return _name
         End Get
@@ -19,7 +21,7 @@
         End Set
     End Property
 
-    Public Property title As String
+    Public Property title As String Implements IEmployee.title
         Get
             Return _title
         End Get
@@ -27,7 +29,7 @@
             _title = value
         End Set
     End Property
-    Public Property salary As Decimal
+    Public Property salary As Decimal Implements IEmployee.salary
         Get
             Return _salary
         End Get
@@ -35,7 +37,7 @@
             _salary = value
         End Set
     End Property
-    Public Property age As Integer
+    Public Property age As Integer Implements IEmployee.age
         Get
             Return _age
         End Get

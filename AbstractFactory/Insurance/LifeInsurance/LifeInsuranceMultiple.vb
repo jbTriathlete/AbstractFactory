@@ -3,7 +3,9 @@
     Private Property multiple As Integer
 
     Public Sub New(_name As String, _title As String, _age As Integer, _salary As Decimal, _planName As String, _planType As Integer, _multiple As Integer)
-        MyBase.New(_name, _title, _age, _salary, _planName, _planType)
+        PeeOn = New Employee(_name, _title, _age, _salary)
+        PlanName = _planName
+        PlanType = _planType
         multiple = _multiple
     End Sub
 
