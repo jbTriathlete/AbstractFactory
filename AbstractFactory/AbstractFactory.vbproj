@@ -97,7 +97,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Plans\Accidental Death And dismemberment\" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -130,8 +129,10 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\doa.vb" />
     <Compile Include="Employee\Employee.vb" />
     <Compile Include="Employee\IEmployee.vb" />
+    <Compile Include="Plans\Accidental Death And dismemberment\ADDFlat.vb" />
     <Compile Include="Plans\BasePlan.vb" />
     <Compile Include="Plans\LifeInsurance\LifeInsuranceFlat.vb" />
     <Compile Include="Global.asax.vb">
